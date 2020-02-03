@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <button type="button" onclick="myFunction()">Play Audio</button>
+    <p id="s1"></p>
+    <p id="s2"></p>
+    <p id="s3"></p>
+    <p id="s4"></p>
+    
+<script>
+function myFunction(){
+var x = Math.floor(Math.random()*9);
+var y = Math.floor(Math.random()*9);
+var z = Math.floor(Math.random()*9);
+("<table aling=center border=1 cellpadding=5>");
+document.getElementById("s1").innerHTML="<tr><td>" +x+ "</td><td>" +y+ "</td><td>" +z+ "</td></tr>";
+document.getElementById("s2").innerHTML="<OBJECT DATA='SoundNumber/"+x+".wav' TYPE='audio/wav'>";
+document.getElementById("s3").innerHTML="<OBJECT DATA='SoundNumber/"+y+".wav' TYPE='audio/wav'>";
+document.getElementById("s4").innerHTML="<OBJECT DATA='SoundNumber/"+z+".wav' TYPE='audio/wav'>";
+}
+</script>
+</body>
+</html>
